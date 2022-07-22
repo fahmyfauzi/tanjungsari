@@ -36,9 +36,9 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        $service = Service::create($request->all());
+        Service::create($request->all());
 
-        return redirect()->back();
+        return redirect()->back()->with('status', 'Layanan Berhasil Dikirim');
     }
 
     /**

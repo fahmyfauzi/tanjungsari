@@ -3,6 +3,11 @@
 @section('content')
 <br><br><br><br>
 <div class="col-xl-8 offset-xl-2 py-5">
+    @if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+    </div>
+    @endif
 
     <h1 align="center">
         <p>Pelayanan Surat Online</p>
@@ -12,7 +17,7 @@
     <p class="lead">Silahkan lengkapi semua isian sesuai dengan data yang diperlukan</p>
 
 
-    <form id="contact-form" method="POST" action="{{ route('layanan.store') }}" role="form" novalidate="true">
+    <form id="contact-form" method="POST" action="{{ route('layanan.store') }}" role="form">
         @csrf
         <div class="messages"></div>
 
@@ -31,7 +36,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="form_lastname">NIK *</label>
-                        <input id="form_lastname" type="text" name="nik" class="form-control"
+                        <input id="form_lastname" type="number" name="nik" class="form-control"
                             placeholder="Silahkan masukkan NIK anda *" required="required"
                             data-error="NIK Harus diisi!.">
                         <div class="help-block with-errors"></div>
@@ -42,8 +47,8 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="form_email">No WhatsApp *</label>
-                        <input id="form_email" type="email" name="no_wa" class="form-control"
-                            placeholder="Silahkan masukkan email anda *" required="required"
+                        <input id="form_email" type="number" name="no_wa" class="form-control"
+                            placeholder="Silahkan masukkan nomor WhatsApp anda *" required="required"
                             data-error="Format email salah.">
                         <div class="help-block with-errors"></div>
                     </div>
@@ -81,11 +86,10 @@
                 </div>
                 <div class="col-md-6">
                     <input type="submit" class="btn btn-success btn-send disabled" value="Kirim Permohonan">
-                </div>
-                <div class="col-md-6">
                     <input type="button" class="btn btn-primary btn-send" value="Kembali"
                         onclick="window.history.back()">
                 </div>
+
             </div>
 
             <div class="row">

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'PageController@home')->name('home');
+Route::get('/', 'PageController@home');
 Route::get('visi-misi', 'PageController@visimisi');
 Route::get('sejarah', 'PageController@sejarah');
 Route::get('wilayah', 'PageController@wilayah');
@@ -38,7 +38,7 @@ Route::post('/comments', 'PostsController@comment');
 Route::get('transparansi', 'TransparansiController@show');
 
 Route::get('layanan', 'ServiceController@create');
-Route::get('layanan/store', 'ServiceController@store');
+Route::post('layanan/store', 'ServiceController@store')->name('layanan.store');
 
 
 
@@ -53,7 +53,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::patch('lembagas/{id}', 'AdminController@editProses');
   Route::resource('admin/posts', 'PostsController');
   Route::get('home', 'HomeController@index')->name('home');
+  Route::get('admin/layanan', 'ServiceController@index')->name('layanan.index');
   Route::resource('admin/transparansi', 'TransparansiController');
-  Route::resource('admin/layanan', 'ServiceController');
   Route::resource('admin/produk', 'ProductController');
 });
