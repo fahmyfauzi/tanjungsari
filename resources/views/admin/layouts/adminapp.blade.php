@@ -12,7 +12,8 @@
   <title>Tanjungsari | Admin</title>
   <meta name="description" content="Sufee Admin - HTML5 Admin Template">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
+  <link rel="icon" href="{{ asset('img/logo.png') }}'" type="image/x-icon">
   @include('admin.partials.style')
   @yield('style')
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->

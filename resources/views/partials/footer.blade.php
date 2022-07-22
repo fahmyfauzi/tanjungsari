@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="footer-info my-3 ">
-      <p class="fs-1"><span class="fa fa-copyright"></span> 2020 Pemeritah Desa Tanjungsari</p>
+      <p class="fs-1"><span class="fa fa-copyright"></span> {{ date('Y') }} Pemeritah Desa Tanjungsari</p>
 
     </div>
     <div class="socmed-icon">

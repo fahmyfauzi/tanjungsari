@@ -1,5 +1,5 @@
 @extends('layouts.layout')
-
+@section('title', 'Tanjungsari | Layanan Desa')
 @section('content')
 <br><br><br><br>
 <div class="col-xl-8 offset-xl-2 py-5">

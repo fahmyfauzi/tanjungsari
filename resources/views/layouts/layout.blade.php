@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- Partials Styles -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <!-- Page Styles -->
-    @yield('style')
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/6144395dcf.js" crossorigin="anonymous"></script>
-    <title>@yield('title')</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Styles -->
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <!-- Partials Styles -->
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <!-- Page Styles -->
+  @yield('style')
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/6144395dcf.js" crossorigin="anonymous"></script>
+  <title>@yield('title')</title>
+
+  <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
+  <link rel="icon" href="{{ asset('img/logo.png') }}'" type="image/x-icon">
 </head>
+
 <body>
-  
+
   @include('partials.navbar')
 
   @yield('content')
@@ -25,4 +30,5 @@
   <script src="{{ asset('js/app.js') }}" defer></script>
   @yield('script')
 </body>
+
 </html>
