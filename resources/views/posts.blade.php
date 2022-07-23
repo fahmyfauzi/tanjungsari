@@ -60,9 +60,11 @@
           <small class="text-muted cat">
             <span class="fa fa-clock-o" style="color: crimson"></span> {{ $post->created_at->diffForHumans() }}
           </small>
-          <h4 class="card-title">{{ $post->judul }}</h4>
+          <h4 class="card-title"><a href="{{ route('posts.post', $post->slug) }}"
+              style="text-decoration: none; color:black;">{{
+              $post->judul }}</a></h4>
 
-          <p class="card-text">{!! Str::limit($post->content , 100, '.') !!}
+          <p class="card-text">{!! Str::limit($post->content , 200, '.') !!}
             <a style="color: crimson" href="{{ route('posts.post', $post->slug) }}" class="">Baca Selengkapnya...</a>
           </p>
         </div>
@@ -90,5 +92,6 @@
     </div>
 
   </div>
+  {{-- {{ links($posts) }} --}}
 </div>
 @endsection

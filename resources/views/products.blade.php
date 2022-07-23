@@ -31,7 +31,7 @@
   <!-- For Demo Purpose-->
   <header class="text-center mb-5">
     <h1 class="display-4 font-weight-bold">Produk Desa</h1>
-    <p class="font-italic text-muted mb-0">Ini adalah Produk-produk unggulan Desa Cibatu</p>
+    <p class="font-italic text-muted mb-0">Ini adalah Produk-produk unggulan Desa Tanjungsari</p>
 
   </header>
 
@@ -47,7 +47,7 @@
         <div class="card-body p-4">
           <h5><a href="{{ route('products.product', $product->id) }}" class="text-dark">{{ $product->nama_barang }}</a>
           </h5>
-          <h5 class="text-dark font-weight-bold">Rp. {{ $product->harga }}</h5>
+          <h5 class="text-dark font-weight-bold">Rp. {{number_format($product->harga) }}</h5>
           <div class="row px-2">
             <h5><a href="{{ route('products.product', $product->id) }}" class="btn crimson"><i
                   class="fa fa-money-bill-wave"></i> Pesan</a></h5>
