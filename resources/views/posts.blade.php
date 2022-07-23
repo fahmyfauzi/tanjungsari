@@ -74,6 +74,7 @@
       @endforeach
     </div>
 
+
     <!-- Sidebar Widgets Column -->
     <div class="col-lg-4 d-md-none d-lg-block" style="top: 0; margin-top: -22px;">
 
@@ -92,6 +93,6 @@
     </div>
 
   </div>
-  {{-- {{ links($posts) }} --}}
+
 </div>
 @endsection

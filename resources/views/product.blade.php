@@ -261,7 +261,7 @@
               <span class="fa fa-star checked"></span>
             </div>
           </div>
-          <h4 class="price">Harga: <span>Rp. {{ $produk->harga }}</span></h4>
+          <h4 class="price">Harga: <span>Rp. {{ number_format($produk->harga) }}</span></h4>
           <p class="product-description">Untuk Pemesanan Lebih Lanjut Hubungi No Whatsapp Dibawah ini:</p>
           `<a href="https://wa.me/62{{ $produk->kontak_penjual }}" target="_blank"
             class="btn btn-outline-success btn-lg"><i class="fa fa-whatsapp"> {{

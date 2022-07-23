@@ -7,7 +7,7 @@
         aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
       </button>
-      <a class="navbar-brand" href="{{ url('home') }}">Tanjungsari Admin</a>
+      <a class="navbar-brand" href="{{ route('homepage') }}">Tanjungsari Admin</a>
       {{-- <a class="navbar-brand hidden" href="#"><img src="{{ asset('vendor/sufee-admin/images/logo2.png') }}"
           alt="Logo"></a> --}}
     </div>
@@ -15,7 +15,7 @@
     <div id="main-menu" class="main-menu collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="">
-          <a href=""> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+          <a href="{{ route('home') }}"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
         </li>
 
         <h3 class="menu-title">Admin</h3><!-- /.menu-title -->
