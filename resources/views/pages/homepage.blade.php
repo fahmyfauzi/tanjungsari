@@ -27,7 +27,7 @@
 <div class="welcome mb-5">
   <div class="container">
     <div class="photo">
-      <img src="{{ asset('img/photo.png') }}" alt="">
+      <img src="{{ asset('img/photo.jpeg') }}" alt="">
     </div>
     <div class="text">
       <h2>Selamat Datang Di Website Kami</h2>
@@ -50,10 +50,15 @@
 
       <div class="col mb-4">
         <div class="card h-100">
-          <img src="{{ asset( $post->thumbnail ) }}" class="card-img-top" alt="">
+          <a href="{{ route('posts.post', $post->slug) }}"><img src="{{ asset( $post->thumbnail ) }}"
+              class="card-img-top" alt=""></a>
           <div class="card-body">
-            <h5 class="card-title">{{ Str::limit($post->judul , 50) }}</h5>
-            <p class="card-text"> {!! Str::limit($post->content , 100, '.') !!} <span>baca selengkapnya...</span></p>
+            <h5 class="card-title"> <a href="{{ route('posts.post', $post->slug) }}"
+                style="text-decoration: none;color: black;">{{
+                Str::limit($post->judul , 50)
+                }}</a></h5>
+            <p class="card-text"> {!! Str::limit($post->content , 100, '.') !!} <a
+                href=" {{ route('posts.post', $post->slug) }}"><span>baca selengkapnya...</span></a></p>
           </div>
         </div>
       </div>

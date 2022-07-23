@@ -25,18 +25,20 @@ Tanjungsari | {{ $title }}
 
 <div class="container">
   <h4>VISI :</h4>
-  <p class="lead">MEWUJUDKAN DESA MANDIRI YANG BERBUDI DAN TERPUJI</p>
+  <p class="lead">TANJUNGSARI BANGKIT, BERDAYA DAN MANDIRI DIBIDANG EKONOMI, SOSIAL, BUDAYA DAN BERBASIS RELIGIUS
+    ISLAMI.</p>
   <h4>MISI:</h4>
   <ol class="lead center">
-    <li>Meningkatkan Kinerja Perangkat Desa dan Lembaga Desa sesuai Tupoksi Masing-masing.</li>
-    <li>Meningkatkan Pelayanan Publik yang proaktif,Cepat,Tepat,dan Optimal berbasis Teknologi.</li>
-    <li>Menghadirkan Transfaransi perencanaan dan Realisasi Anggaran.</li>
-    <li>Meningkatkan Perhatian pada Kegiatan Keagamaan ,Budaya,Sosial dan Kearipan teknologi.</li>
-    <li>Meningkatkan Pendapatan Asli desa dengan Sistem Ekonomi berbasis Kedusunan.</li>
-    <li>Menyajikan Data yang akurat,serta Pengolahan Aset Desa seacara menyeluruh.</li>
-    <li>Peningkatan Perhatian Kesejahteraan pada lemabaga Desa/Rt/RW/Kader/dll yang bersumber dari PADes.</li>
-    <li>Memberikan layanan kesehatan dan kepedulian terhadap lingkungan budaya bersih.</li>
-    <li>Membina Kewirausahaan bagi Kaum muda serta pelatihan-pelatihan Lainnya dalam Memnciptakan kegiatan Positif.</li>
+    <li>Meningkatkan Profesionalisme Pelayanan Publik.</li>
+    <li>Meningkatkan Kualitas Sumber Daya Manusia bagi Aparatur Pemerintah Desa dan Lembaga - Lembaga Desa.</li>
+    <li>Meningkatkan Ketersediaan dan Kualitas InfraStruktur Pemerintah Desa.</li>
+    <li>Penertiban Administrasi Pemerintah Desa.</li>
+    <li>Meningkatkan Kerukunan Antar Umat Beragama.</li>
+    <li>Meningkatkan Keamanan dan Ketertiban bagi Masyarakat Desa.</li>
+    <li>Meningkatkan Pemberdayaan Masyarakat dan Sumber daya Manusia yang Lebih Baik.</li>
+    <li>Meningkatkan Pembinaan Terhadap Karang Taruna Desa.</li>
+    <li>Meningkatkan Pelayanan Masyarakat Dalam Bidang Kesehatan.</li>
+    <li>Meningkatkan Sarana Pendidikan dibidang Keagamaan maupun Umum.</li>
   </ol>
 </div>
 @endsection
