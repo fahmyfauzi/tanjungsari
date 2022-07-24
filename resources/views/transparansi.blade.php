@@ -4,9 +4,9 @@
 @include('partials.jumbotron', ['title' => 'Transparansi'])
 <div class="container" style="margin-top: 50px">
   <p class="lead"> Sebagai wujud nyata komitmen keterbukaan informasi publik terutama terkait dengan pengelolaan
-    anggaran keuangan desa, Pemerintah Desa Cibatu mulai tahun 2017 melakukan publikasi APBDesa dan Realisasi APBDesa
+    anggaran keuangan desa, Pemerintah Desa Tanjungsari melakukan publikasi APBDesa dan Realisasi APBDesa
     dalam format infografik, sehingga dapat lebih mudah dibaca, disebarkan dan dicetak untuk kemudian diakses oleh
-    seluruh warga masyarakat, baik warga Desa Cibatu maupun publik pada umumnya.</p>
+    seluruh warga masyarakat, baik warga Desa Tanjungsari maupun publik pada umumnya.</p>
 
 
   <div class="row mt-4">

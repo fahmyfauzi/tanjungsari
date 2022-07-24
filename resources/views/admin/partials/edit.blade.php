@@ -12,7 +12,7 @@
       <div class="form-group">
         <div class=""><label for="textarea-input" class=" form-control-label">Deskripsi :</label></div>
         <div class=""><textarea name="deskripsi" id="textarea-input" rows="9" placeholder="Content..."
-            class="form-control"></textarea></div>
+            class="form-control">{{ $deskripsi }}</textarea></div>
       </div>
 
       <div class="form-group">

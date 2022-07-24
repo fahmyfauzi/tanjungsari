@@ -5,16 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Posts;
-class PageController extends Controller 
+
+class PageController extends Controller
 {
-    
-    public function home() 
+
+    public function home()
     {
         $posts = Posts::orderBy('created_at', 'desc')->paginate(4);
         return view('pages.homepage', compact('posts'));
     }
 
-    public function visimisi() 
+    public function visimisi()
     {
         $data = array(
             'title' => 'Visi & Misi',
@@ -23,7 +24,7 @@ class PageController extends Controller
         return view('pages.visimisi')->with($data);
     }
 
-    public function sejarah() 
+    public function sejarah()
     {
         $data = array(
             'title' => 'Sejarah',
@@ -32,7 +33,7 @@ class PageController extends Controller
         return view('pages.page')->with($data);
     }
 
-    public function wilayah() 
+    public function wilayah()
     {
         $data = array(
             'title' => 'Wilayah',
@@ -40,19 +41,19 @@ class PageController extends Controller
         return view('pages.wilayah')->with($data);
     }
 
-    public function pd() 
+    public function pd()
     {
         $database = DB::table('lembagas')->where('id', 1)->first();
         $data = array(
             'title' => $database->nama,
             'deskripsi' => $database->deskripsi,
             'gambar' => $database->gambar,
-            'jumbotronImage' => 'img/pd.png'
+            'jumbotronImage' => 'img/pd.JPG'
         );
         return view('pages.lembaga')->with($data);
     }
 
-    public function bpd() 
+    public function bpd()
     {
         $database = DB::table('lembagas')->where('id', 2)->first();
         $data = array(
@@ -64,7 +65,7 @@ class PageController extends Controller
         return view('pages.lembaga')->with($data);
     }
 
-    public function lpm() 
+    public function lpm()
     {
         $database = DB::table('lembagas')->where('id', 3)->first();
         $data = array(
@@ -76,7 +77,7 @@ class PageController extends Controller
         return view('pages.lembaga')->with($data);
     }
 
-    public function pkk() 
+    public function pkk()
     {
         $database = DB::table('lembagas')->where('id', 4)->first();
         $data = array(
@@ -88,7 +89,7 @@ class PageController extends Controller
         return view('pages.lembaga')->with($data);
     }
 
-    public function kt() 
+    public function kt()
     {
         $database = DB::table('lembagas')->where('id', 5)->first();
         $data = array(
@@ -99,8 +100,8 @@ class PageController extends Controller
         );
         return view('pages.lembaga')->with($data);
     }
-    
-    public function transparansi() 
+
+    public function transparansi()
     {
         $data = array(
             'title' => 'Transparansi',
@@ -108,7 +109,7 @@ class PageController extends Controller
         return view('pages.page')->with($data);
     }
 
-    public function kontak() 
+    public function kontak()
     {
         $data = array(
             'title' => 'Kontak',
