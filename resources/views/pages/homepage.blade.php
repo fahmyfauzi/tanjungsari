@@ -11,7 +11,7 @@
 </style>
 @endsection
 
-@section('title', 'Tanjungsari')
+@section('title', 'Tanjungsari | Home')
 
 @section('content')
 
