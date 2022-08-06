@@ -30,6 +30,7 @@
             <a class="dropdown-item" href="/lpm">LPM</a>
             <a class="dropdown-item" href="/pkk">PKK</a>
             <a class="dropdown-item" href="/karang-taruna">Karang Taruna</a>
+            <a class="dropdown-item" href="/bumdes">Bumdes</a>
           </div>
         </li>
         <li class="nav-item">

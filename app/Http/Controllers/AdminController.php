@@ -70,6 +70,17 @@ class AdminController extends Controller
         );
         return view('admin.adminpage')->with($data);
     }
+    public function bumdes()
+    {
+        $database = DB::table('lembagas')->where('id', 6)->first();
+        $data = array(
+            'id' => $database->id,
+            'title' => $database->nama,
+            'deskripsi' => $database->deskripsi,
+            'gambar' => $database->gambar
+        );
+        return view('admin.adminpage')->with($data);
+    }
 
     public function editProses(Request $request, $id)
     {

@@ -28,6 +28,7 @@
             <li><i class="fa fa-bars"></i><a href="{{ url('admin/lpm') }}">LPM</a></li>
             <li><i class="fa fa-share-square-o"></i><a href="{{ url('admin/pkk') }}">PKK</a></li>
             <li><i class="fa fa-id-card-o"></i><a href="{{ url('admin/kt') }}">Karang Taruna</a></li>
+            <li><i class="fa fa-id-card-o"></i><a href="{{ url('admin/bumdes') }}">Bumdes</a></li>
           </ul>
         </li>
         <li>

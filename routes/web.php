@@ -25,6 +25,7 @@ Route::get('bpd', 'PageController@bpd');
 Route::get('lpm', 'PageController@lpm');
 Route::get('pkk', 'PageController@pkk');
 Route::get('karang-taruna', 'PageController@kt');
+Route::get('bumdes', 'PageController@bumdes');
 
 // Route::get('transparansi', 'PageController@transparansi');
 Route::get('produk-desa', 'ProductController@display');
@@ -50,6 +51,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('admin/lpm', 'AdminController@lpm');
   Route::get('admin/pkk', 'AdminController@pkk');
   Route::get('admin/kt', 'AdminController@kt');
+  Route::get('admin/bumdes', 'AdminController@bumdes');
   Route::patch('lembagas/{id}', 'AdminController@editProses');
   Route::resource('admin/posts', 'PostsController');
   Route::get('home', 'HomeController@index')->name('home');

@@ -100,6 +100,17 @@ class PageController extends Controller
         );
         return view('pages.lembaga')->with($data);
     }
+    public function bumdes()
+    {
+        $database = DB::table('lembagas')->where('id', 6)->first();
+        $data = array(
+            'title' => $database->nama,
+            'deskripsi' => $database->deskripsi,
+            'gambar' => $database->gambar,
+            // 'jumbotronImage' => 'img/kt.jpg'
+        );
+        return view('pages.lembaga')->with($data);
+    }
 
     public function transparansi()
     {
