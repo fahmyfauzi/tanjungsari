@@ -5,10 +5,10 @@
 
     </div>
     <div class="socmed-icon">
-      <a href="" class="fa fa-facebook"></a>
-      <a href="" class="fa fa-twitter"></a>
-      <a href="" class="fa fa-youtube"></a>
-      <a href="" class="fa fa-whatsapp"></a>
+      <a onclick="alert('Cooming Soon')" class="fa fa-facebook"></a>
+      <a onclick="alert('Cooming Soon')" class="fa fa-twitter"></a>
+      <a onclick="alert('Cooming Soon')" class="fa fa-youtube"></a>
+      <a onclick="alert('Cooming Soon')" class="fa fa-whatsapp"></a>
     </div>
   </div>
 </footer>
